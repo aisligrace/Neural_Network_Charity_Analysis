@@ -11,7 +11,7 @@ We split the data into training and testing and scaled it.
 Compiling, Training, and Evaluating the Model
 We used two hidden layers, one with 30 and one with 80 neurons. We have one output layer as a binary classification. We used the activation function ReLU on the hidden layers and Sigmoid on the output layer, and Adam as the optimizer and binary_crossentropy as the loss activation.
 
-The accuracy of our model was . To try and improve the accuracy of our model, we increased the neurons on our hiddden layer, then we tried using three hidden layers. We also organized the 'ASK_AMT' column into buckets and organized the values by intervals.
+The accuracy of our model started at 67%, and was 64.9% on our second try and 61% on our third. To try and improve the accuracy of our model, we increased the neurons on our hiddden layer, then we tried using three hidden layers. We also organized the 'ASK_AMT' column into buckets and organized the values by intervals. The last thing we did was switch the activation method from relu to tanh on the hidden layers. None of our additonal steps improved the accuracy of the model.
 
 ## Summary
 We were unable to reach our goal of 75% accuracy, even with the three modifications we made. I would not recommend using this model. To improve, you could combine multiple decision model trees into a Random Forest Classifier using supervised machien learning. 
